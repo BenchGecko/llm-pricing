@@ -1,0 +1,29 @@
+{
+  "name": "@benchgecko/llm-pricing",
+  "version": "1.0.0",
+  "description": "Up-to-date pricing for 300+ LLM APIs in a single JSON file. Updated weekly.",
+  "main": "pricing.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenchGecko/llm-pricing"
+  },
+  "keywords": [
+    "llm",
+    "pricing",
+    "ai",
+    "openai",
+    "anthropic",
+    "claude",
+    "gpt",
+    "gemini",
+    "api",
+    "machine-learning",
+    "benchgecko"
+  ],
+  "author": "BenchGecko (https://benchgecko.ai)",
+  "license": "MIT",
+  "homepage": "https://benchgecko.ai",
+  "bugs": {
+    "url": "https://github.com/BenchGecko/llm-pricing/issues"
+  }
+}

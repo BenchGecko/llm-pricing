@@ -16,6 +16,8 @@ Every LLM provider has different pricing pages, different formats, different uni
 
 Use it to build cost calculators, comparison tools, billing dashboards, or just to answer "how much does GPT-4o cost again?"
 
+For full benchmark scores, performance comparisons, and provider analytics, see [benchgecko.ai](https://benchgecko.ai).
+
 ---
 
 ## Quick Start
@@ -63,6 +65,20 @@ for m in data["models"]:
         print(f"{m['name']}: ${cost:.2f}")
 ```
 
+### Install via npm
+
+```bash
+npm install @benchgecko/llm-pricing
+```
+
+```js
+const pricing = require('@benchgecko/llm-pricing');
+console.log(pricing.models.length); // 346
+console.log(pricing.models.find(m => m.id === 'openai/gpt-4o'));
+```
+
+> Note: For always-fresh data, use the raw GitHub URL. The npm package is updated weekly.
+
 ---
 
 ## Top Models by Price
@@ -91,6 +107,8 @@ for m in data["models"]:
 | o4 Mini | OpenAI | $1.10 | $4.40 | 200K |
 
 > Full pricing for all 346 models available in [`pricing.json`](pricing.json).
+
+**Want to compare performance too?** See how these models score on 40+ benchmarks at [benchgecko.ai/compare](https://benchgecko.ai/compare)
 
 ---
 
@@ -135,6 +153,15 @@ Each model in `pricing.json` has this structure:
 
 ---
 
+## Related Resources
+
+- [BenchGecko](https://benchgecko.ai) — Full model rankings, benchmark scores, and provider analytics
+- [BenchGecko Compare](https://benchgecko.ai/compare) — Side-by-side model comparison with pricing + performance
+- [BenchGecko API](https://benchgecko.ai/api-docs) — Free REST API for model data, benchmarks, and pricing
+- [Awesome LLM Benchmarks](https://github.com/BenchGecko/awesome-llm-benchmarks) — Curated list of 60+ AI benchmarks
+
+---
+
 ## Data Source
 
 Pricing data is sourced from the [OpenRouter API](https://openrouter.ai/api/v1/models) and updated weekly. OpenRouter aggregates pricing from all major LLM providers into a single API.
@@ -149,4 +176,4 @@ For full benchmark comparisons, performance scores, and provider analytics, visi
 
 MIT -- use this data however you want. Attribution appreciated but not required.
 
-If you build something cool with this data, let us know at [benchgecko.ai](https://benchgecko.ai).
+If you build something cool with this data, let us know at [benchgecko.ai](https://benchgecko.ai) or [@BenchGecko](https://twitter.com/BenchGecko) on Twitter.
