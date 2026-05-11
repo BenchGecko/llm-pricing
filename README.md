@@ -4,8 +4,8 @@
 
 Powered by [BenchGecko](https://benchgecko.ai) -- The Data Layer of the AI Economy.
 
-![Last Updated](https://img.shields.io/badge/last_updated-2026-05-04brightgreen)
-![Models](https://img.shields.io/badge/models-371-blue)
+![Last Updated](https://img.shields.io/badge/last_updated-2026-05-11brightgreen)
+![Models](https://img.shields.io/badge/models-365-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---

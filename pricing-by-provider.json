@@ -119,20 +119,6 @@
         "text->text"
       ],
       "type": "chat"
-    },
-    {
-      "id": "allenai/olmo-3.1-32b-instruct",
-      "name": "AllenAI: Olmo 3.1 32B Instruct",
-      "provider": "Allenai",
-      "input_per_million": 0.2,
-      "output_per_million": 0.6,
-      "context_window": 65536,
-      "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
     }
   ],
   "Alpindale": [
@@ -273,38 +259,6 @@
       "modalities": [
         "text",
         "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-3.7-sonnet",
-      "name": "Anthropic: Claude 3.7 Sonnet",
-      "provider": "Anthropic",
-      "input_per_million": 3,
-      "output_per_million": 15,
-      "context_window": 200000,
-      "max_output": 128000,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "file->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "anthropic/claude-3.7-sonnet:thinking",
-      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
-      "provider": "Anthropic",
-      "input_per_million": 3,
-      "output_per_million": 15,
-      "context_window": 200000,
-      "max_output": 64000,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "file->text"
       ],
       "type": "chat"
     },
@@ -566,6 +520,20 @@
     }
   ],
   "Baidu": [
+    {
+      "id": "baidu/cobuddy:free",
+      "name": "Baidu Qianfan: CoBuddy (free)",
+      "provider": "Baidu",
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 131072,
+      "max_output": 65536,
+      "is_free": true,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
     {
       "id": "baidu/ernie-4.5-21b-a3b",
       "name": "Baidu: ERNIE 4.5 21B A3B",
@@ -916,8 +884,8 @@
       "id": "deepseek/deepseek-v3.2-speciale",
       "name": "DeepSeek: DeepSeek V3.2 Speciale",
       "provider": "Deepseek",
-      "input_per_million": 0.4,
-      "output_per_million": 1.2,
+      "input_per_million": 0.29,
+      "output_per_million": 0.43,
       "context_window": 163840,
       "max_output": 163840,
       "is_free": false,
@@ -1034,7 +1002,7 @@
       "provider": "Google",
       "input_per_million": 0.1,
       "output_per_million": 0.4,
-      "context_window": 1048576,
+      "context_window": 1000000,
       "max_output": 8192,
       "is_free": false,
       "modalities": [
@@ -1190,6 +1158,24 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-3.1-flash-lite",
+      "name": "Google: Gemini 3.1 Flash Lite",
+      "provider": "Google",
+      "input_per_million": 0.25,
+      "output_per_million": 1.5,
+      "context_window": 1048576,
+      "max_output": 65536,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-3.1-flash-lite-preview",
       "name": "Google: Gemini 3.1 Flash Lite Preview",
       "provider": "Google",
@@ -1273,21 +1259,6 @@
       "type": "chat"
     },
     {
-      "id": "google/gemma-3-12b-it:free",
-      "name": "Google: Gemma 3 12B (free)",
-      "provider": "Google",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 32768,
-      "max_output": 8192,
-      "is_free": true,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "provider": "Google",
@@ -1296,21 +1267,6 @@
       "context_window": 131072,
       "max_output": 16384,
       "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "google/gemma-3-27b-it:free",
-      "name": "Google: Gemma 3 27B (free)",
-      "provider": "Google",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 131072,
-      "max_output": 8192,
-      "is_free": true,
       "modalities": [
         "text",
         "image->text"
@@ -1333,35 +1289,6 @@
       "type": "chat"
     },
     {
-      "id": "google/gemma-3-4b-it:free",
-      "name": "Google: Gemma 3 4B (free)",
-      "provider": "Google",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 32768,
-      "max_output": 8192,
-      "is_free": true,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "google/gemma-3n-e2b-it:free",
-      "name": "Google: Gemma 3n 2B (free)",
-      "provider": "Google",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 8192,
-      "max_output": 2048,
-      "is_free": true,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "google/gemma-3n-e4b-it",
       "name": "Google: Gemma 3n 4B",
       "provider": "Google",
@@ -1370,20 +1297,6 @@
       "context_window": 32768,
       "max_output": null,
       "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "google/gemma-3n-e4b-it:free",
-      "name": "Google: Gemma 3n 4B (free)",
-      "provider": "Google",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 8192,
-      "max_output": 2048,
-      "is_free": true,
       "modalities": [
         "text->text"
       ],
@@ -1598,14 +1511,14 @@
   ],
   "Inclusionai": [
     {
-      "id": "inclusionai/ling-2.6-1t:free",
-      "name": "inclusionAI: Ling-2.6-1T (free)",
+      "id": "inclusionai/ling-2.6-1t",
+      "name": "inclusionAI: Ling-2.6-1T",
       "provider": "Inclusionai",
-      "input_per_million": 0,
-      "output_per_million": 0,
+      "input_per_million": 0.3,
+      "output_per_million": 2.5,
       "context_window": 262144,
       "max_output": 32768,
-      "is_free": true,
+      "is_free": false,
       "modalities": [
         "text->text"
       ],
@@ -1620,6 +1533,20 @@
       "context_window": 262144,
       "max_output": 32768,
       "is_free": false,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "inclusionai/ring-2.6-1t:free",
+      "name": "inclusionAI: Ring-2.6-1T (free)",
+      "provider": "Inclusionai",
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 262144,
+      "max_output": 65536,
+      "is_free": true,
       "modalities": [
         "text->text"
       ],
@@ -1765,10 +1692,10 @@
       "id": "meta-llama/llama-3-8b-instruct",
       "name": "Meta: Llama 3 8B Instruct",
       "provider": "Meta llama",
-      "input_per_million": 0.03,
+      "input_per_million": 0.04,
       "output_per_million": 0.04,
       "context_window": 8192,
-      "max_output": 16384,
+      "max_output": 8192,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1950,6 +1877,20 @@
       "type": "chat"
     },
     {
+      "id": "microsoft/phi-4-mini-instruct",
+      "name": "Microsoft: Phi 4 Mini Instruct",
+      "provider": "Microsoft",
+      "input_per_million": 0.08,
+      "output_per_million": 0.35,
+      "context_window": 128000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "microsoft/wizardlm-2-8x22b",
       "name": "WizardLM-2 8x22B",
       "provider": "Microsoft",
@@ -2028,7 +1969,7 @@
       "input_per_million": 0.15,
       "output_per_million": 1.15,
       "context_window": 196608,
-      "max_output": 131072,
+      "max_output": 196608,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2056,7 +1997,7 @@
       "input_per_million": 0.3,
       "output_per_million": 1.2,
       "context_window": 196608,
-      "max_output": null,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2283,6 +2224,21 @@
       "type": "chat"
     },
     {
+      "id": "mistralai/mistral-medium-3-5",
+      "name": "Mistral: Mistral Medium 3.5",
+      "provider": "Mistralai",
+      "input_per_million": 1.5,
+      "output_per_million": 7.5,
+      "context_window": 262144,
+      "max_output": null,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "provider": "Mistralai",
@@ -2363,20 +2319,6 @@
       "output_per_million": 6,
       "context_window": 65536,
       "max_output": null,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "mistralai/mixtral-8x7b-instruct",
-      "name": "Mistral: Mixtral 8x7B Instruct",
-      "provider": "Mistralai",
-      "input_per_million": 0.54,
-      "output_per_million": 0.54,
-      "context_window": 32768,
-      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2475,10 +2417,10 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "provider": "Moonshotai",
-      "input_per_million": 0.44,
-      "output_per_million": 2,
+      "input_per_million": 0.4,
+      "output_per_million": 1.98,
       "context_window": 262144,
-      "max_output": 65535,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text",
@@ -2490,10 +2432,10 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshotai",
-      "input_per_million": 0.74,
-      "output_per_million": 3.49,
-      "context_window": 262142,
-      "max_output": 262142,
+      "input_per_million": 0.75,
+      "output_per_million": 3.5,
+      "context_window": 262144,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text",
@@ -2636,20 +2578,6 @@
   ],
   "Nvidia": [
     {
-      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
-      "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
-      "provider": "Nvidia",
-      "input_per_million": 1.2,
-      "output_per_million": 1.2,
-      "context_window": 131072,
-      "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
       "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
       "provider": "Nvidia",
@@ -2737,22 +2665,6 @@
       "type": "chat"
     },
     {
-      "id": "nvidia/nemotron-nano-12b-v2-vl",
-      "name": "NVIDIA: Nemotron Nano 12B 2 VL",
-      "provider": "Nvidia",
-      "input_per_million": 0.2,
-      "output_per_million": 0.6,
-      "context_window": 131072,
-      "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "video->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "nvidia/nemotron-nano-12b-v2-vl:free",
       "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
       "provider": "Nvidia",
@@ -2827,6 +2739,22 @@
         "text",
         "audio->text",
         "audio"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-chat-latest",
+      "name": "OpenAI: GPT Chat Latest",
+      "provider": "Openai",
+      "input_per_million": 5,
+      "output_per_million": 30,
+      "context_window": 400000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
       ],
       "type": "chat"
     },
@@ -3857,7 +3785,7 @@
       "provider": "Openrouter",
       "input_per_million": -1000000,
       "output_per_million": -1000000,
-      "context_window": 200000,
+      "context_window": 2000000,
       "max_output": null,
       "is_free": false,
       "modalities": [
@@ -4221,9 +4149,9 @@
       "name": "Qwen: Qwen3 32B",
       "provider": "Qwen",
       "input_per_million": 0.08,
-      "output_per_million": 0.24,
+      "output_per_million": 0.28,
       "context_window": 40960,
-      "max_output": 40960,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4304,7 +4232,7 @@
       "id": "qwen/qwen3-coder-next",
       "name": "Qwen: Qwen3 Coder Next",
       "provider": "Qwen",
-      "input_per_million": 0.12,
+      "input_per_million": 0.11,
       "output_per_million": 0.8,
       "context_window": 262144,
       "max_output": 262144,
@@ -4587,10 +4515,10 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "provider": "Qwen",
-      "input_per_million": 0.15,
+      "input_per_million": 0.14,
       "output_per_million": 1,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": 81920,
       "is_free": false,
       "modalities": [
         "text",
@@ -4603,10 +4531,10 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "provider": "Qwen",
-      "input_per_million": 0.1,
+      "input_per_million": 0.04,
       "output_per_million": 0.15,
       "context_window": 262144,
-      "max_output": null,
+      "max_output": 81920,
       "is_free": false,
       "modalities": [
         "text",
@@ -4920,14 +4848,14 @@
       "type": "chat"
     },
     {
-      "id": "tencent/hy3-preview:free",
-      "name": "Tencent: Hy3 preview (free)",
+      "id": "tencent/hy3-preview",
+      "name": "Tencent: Hy3 preview",
       "provider": "Tencent",
-      "input_per_million": 0,
-      "output_per_million": 0,
+      "input_per_million": 0.07,
+      "output_per_million": 0.26,
       "context_window": 262144,
       "max_output": 262144,
-      "is_free": true,
+      "is_free": false,
       "modalities": [
         "text->text"
       ],
@@ -4985,22 +4913,6 @@
       "output_per_million": 0.4,
       "context_window": 32768,
       "max_output": 32768,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    }
-  ],
-  "Tngtech": [
-    {
-      "id": "tngtech/deepseek-r1t2-chimera",
-      "name": "TNG: DeepSeek R1T2 Chimera",
-      "provider": "Tngtech",
-      "input_per_million": 0.3,
-      "output_per_million": 1.1,
-      "context_window": 163840,
-      "max_output": 163840,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5228,8 +5140,8 @@
       "id": "xiaomi/mimo-v2-flash",
       "name": "Xiaomi: MiMo-V2-Flash",
       "provider": "Xiaomi",
-      "input_per_million": 0.09,
-      "output_per_million": 0.29,
+      "input_per_million": 0.1,
+      "output_per_million": 0.3,
       "context_window": 262144,
       "max_output": 65536,
       "is_free": false,
@@ -5293,7 +5205,7 @@
       "input_per_million": 1,
       "output_per_million": 3,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5407,10 +5319,10 @@
       "id": "z-ai/glm-4.7",
       "name": "Z.ai: GLM 4.7",
       "provider": "Z ai",
-      "input_per_million": 0.38,
-      "output_per_million": 1.74,
+      "input_per_million": 0.4,
+      "output_per_million": 1.75,
       "context_window": 202752,
-      "max_output": null,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5436,9 +5348,9 @@
       "name": "Z.ai: GLM 5",
       "provider": "Z ai",
       "input_per_million": 0.6,
-      "output_per_million": 2.08,
+      "output_per_million": 1.92,
       "context_window": 202752,
-      "max_output": 16384,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5580,10 +5492,10 @@
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
-      "input_per_million": 0.74,
-      "output_per_million": 3.49,
-      "context_window": 262142,
-      "max_output": 262142,
+      "input_per_million": 0.75,
+      "output_per_million": 3.5,
+      "context_window": 262144,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text",
