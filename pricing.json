@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-06-15",
   "source": "OpenRouter API via BenchGecko",
-  "models_count": 341,
+  "models_count": 337,
   "url": "https://benchgecko.ai",
   "models": [
     {
@@ -26,6 +26,22 @@
       "provider": "~anthropic",
       "input_per_million": 3,
       "output_per_million": 15,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "~anthropic/claude-fable-latest",
+      "name": "Anthropic: Claude Fable Latest",
+      "provider": "~anthropic",
+      "input_per_million": 10,
+      "output_per_million": 50,
       "context_window": 1000000,
       "max_output": 128000,
       "is_free": false,
@@ -340,6 +356,22 @@
       "type": "chat"
     },
     {
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
+      "provider": "Anthropic",
+      "input_per_million": 10,
+      "output_per_million": 50,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "anthropic/claude-haiku-4.5",
       "name": "Anthropic: Claude Haiku 4.5",
       "provider": "Anthropic",
@@ -555,20 +587,6 @@
       "output_per_million": 0.8,
       "context_window": 32768,
       "max_output": null,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "arcee-ai/maestro-reasoning",
-      "name": "Arcee AI: Maestro Reasoning",
-      "provider": "Arcee ai",
-      "input_per_million": 0.9,
-      "output_per_million": 3.3,
-      "context_window": 131072,
-      "max_output": 32000,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -883,10 +901,10 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash",
       "provider": "Deepseek",
-      "input_per_million": 0.1,
-      "output_per_million": 0.2,
+      "input_per_million": 0.09,
+      "output_per_million": 0.18,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 65536,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -939,10 +957,10 @@
       "id": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
       "provider": "Deepseek",
-      "input_per_million": 0.7,
+      "input_per_million": 0.8,
       "output_per_million": 0.8,
-      "context_window": 131072,
-      "max_output": 16384,
+      "context_window": 128000,
+      "max_output": 8192,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1302,9 +1320,9 @@
       "name": "Google: Gemma 4 31B",
       "provider": "Google",
       "input_per_million": 0.12,
-      "output_per_million": 0.36,
+      "output_per_million": 0.35,
       "context_window": 262144,
-      "max_output": 8192,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text",
@@ -1606,20 +1624,6 @@
       "type": "chat"
     },
     {
-      "id": "meta-llama/llama-guard-3-8b",
-      "name": "Llama Guard 3 8B",
-      "provider": "Meta llama",
-      "input_per_million": 0.48,
-      "output_per_million": 0.03,
-      "context_window": 131072,
-      "max_output": 131072,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "meta-llama/llama-3-70b-instruct",
       "name": "Meta: Llama 3 70B Instruct",
       "provider": "Meta llama",
@@ -1908,7 +1912,7 @@
       "name": "MiniMax: MiniMax M2.5",
       "provider": "Minimax",
       "input_per_million": 0.15,
-      "output_per_million": 1.15,
+      "output_per_million": 0.9,
       "context_window": 204800,
       "max_output": 196608,
       "is_free": false,
@@ -1921,10 +1925,10 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "provider": "Minimax",
-      "input_per_million": 0.28,
-      "output_per_million": 1.2,
+      "input_per_million": 0.25,
+      "output_per_million": 1,
       "context_window": 204800,
-      "max_output": 196608,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2296,10 +2300,10 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "provider": "Moonshotai",
-      "input_per_million": 0.4,
-      "output_per_million": 1.9,
+      "input_per_million": 0.38,
+      "output_per_million": 2.03,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text",
@@ -2323,14 +2327,14 @@
       "type": "chat"
     },
     {
-      "id": "moonshotai/kimi-k2.6:free",
-      "name": "MoonshotAI: Kimi K2.6 (free)",
+      "id": "moonshotai/kimi-k2.7-code",
+      "name": "MoonshotAI: Kimi K2.7 Code",
       "provider": "Moonshotai",
-      "input_per_million": 0,
-      "output_per_million": 0,
+      "input_per_million": 0.75,
+      "output_per_million": 3.5,
       "context_window": 262144,
-      "max_output": null,
-      "is_free": true,
+      "max_output": 262144,
+      "is_free": false,
       "modalities": [
         "text",
         "image->text"
@@ -2366,16 +2370,17 @@
       "type": "chat"
     },
     {
-      "id": "nex-agi/deepseek-v3.1-nex-n1",
-      "name": "Nex AGI: DeepSeek V3.1 Nex N1",
+      "id": "nex-agi/nex-n2-pro:free",
+      "name": "Nex AGI: Nex-N2-Pro (free)",
       "provider": "Nex agi",
-      "input_per_million": 0.14,
-      "output_per_million": 0.5,
-      "context_window": 131072,
-      "max_output": 163840,
-      "is_free": false,
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 262144,
+      "max_output": 262144,
+      "is_free": true,
       "modalities": [
-        "text->text"
+        "text",
+        "image->text"
       ],
       "type": "chat"
     },
@@ -2592,20 +2597,6 @@
         "text",
         "image",
         "video->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "nvidia/nemotron-nano-9b-v2",
-      "name": "NVIDIA: Nemotron Nano 9B V2",
-      "provider": "Nvidia",
-      "input_per_million": 0.04,
-      "output_per_million": 0.16,
-      "context_window": 131072,
-      "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
       ],
       "type": "chat"
     },
@@ -3866,10 +3857,10 @@
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
       "provider": "Qwen",
-      "input_per_million": 0.25,
-      "output_per_million": 0.75,
+      "input_per_million": 0.8,
+      "output_per_million": 1,
       "context_window": 131072,
-      "max_output": null,
+      "max_output": 128000,
       "is_free": false,
       "modalities": [
         "text",
@@ -4395,9 +4386,9 @@
       "name": "Qwen: Qwen3.6 27B",
       "provider": "Qwen",
       "input_per_million": 0.29,
-      "output_per_million": 2.4,
+      "output_per_million": 3.17,
       "context_window": 262144,
-      "max_output": 131072,
+      "max_output": 262140,
       "is_free": false,
       "modalities": [
         "text",
@@ -4410,10 +4401,10 @@
       "id": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "provider": "Qwen",
-      "input_per_million": 0.14,
+      "input_per_million": 0.15,
       "output_per_million": 1,
       "context_window": 262144,
-      "max_output": 262140,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text",
@@ -4486,8 +4477,8 @@
       "id": "qwen/qwen3.7-plus",
       "name": "Qwen: Qwen3.7 Plus",
       "provider": "Qwen",
-      "input_per_million": 0.4,
-      "output_per_million": 1.6,
+      "input_per_million": 0.32,
+      "output_per_million": 1.28,
       "context_window": 1000000,
       "max_output": 65536,
       "is_free": false,
@@ -4917,20 +4908,6 @@
       "type": "chat"
     },
     {
-      "id": "z-ai/glm-4-32b",
-      "name": "Z.ai: GLM 4 32B ",
-      "provider": "Z ai",
-      "input_per_million": 0.1,
-      "output_per_million": 0.1,
-      "context_window": 128000,
-      "max_output": null,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "provider": "Z ai",
@@ -4953,20 +4930,6 @@
       "context_window": 131072,
       "max_output": 131070,
       "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "z-ai/glm-4.5-air:free",
-      "name": "Z.ai: GLM 4.5 Air (free)",
-      "provider": "Z ai",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 131072,
-      "max_output": 96000,
-      "is_free": true,
       "modalities": [
         "text->text"
       ],
@@ -5008,7 +4971,7 @@
       "input_per_million": 0.3,
       "output_per_million": 0.9,
       "context_window": 131072,
-      "max_output": 24000,
+      "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text",
@@ -5065,7 +5028,7 @@
       "provider": "Z ai",
       "input_per_million": 1.2,
       "output_per_million": 4,
-      "context_window": 202752,
+      "context_window": 262144,
       "max_output": 131072,
       "is_free": false,
       "modalities": [
@@ -5084,22 +5047,6 @@
       "is_free": false,
       "modalities": [
         "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "z-ai/glm-5v-turbo",
-      "name": "Z.ai: GLM 5V Turbo",
-      "provider": "Z ai",
-      "input_per_million": 1.2,
-      "output_per_million": 4,
-      "context_window": 202752,
-      "max_output": 131072,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "video->text"
       ],
       "type": "chat"
     }
