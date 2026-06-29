@@ -842,22 +842,6 @@
       "type": "chat"
     }
   ],
-  "Essentialai": [
-    {
-      "id": "essentialai/rnj-1-instruct",
-      "name": "EssentialAI: Rnj 1 Instruct",
-      "provider": "Essentialai",
-      "input_per_million": 0.15,
-      "output_per_million": 0.15,
-      "context_window": 32768,
-      "max_output": null,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    }
-  ],
   "Google": [
     {
       "id": "google/gemini-2.5-flash",
@@ -1250,7 +1234,7 @@
       "input_per_million": 0.3,
       "output_per_million": 2.5,
       "context_window": 32768,
-      "max_output": 8192,
+      "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text",
@@ -1282,7 +1266,7 @@
       "input_per_million": 0.5,
       "output_per_million": 3,
       "context_window": 131072,
-      "max_output": 65536,
+      "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text",
@@ -1815,8 +1799,8 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "provider": "Minimax",
-      "input_per_million": 0.15,
-      "output_per_million": 0.9,
+      "input_per_million": 0.12,
+      "output_per_million": 0.48,
       "context_window": 204800,
       "max_output": 196608,
       "is_free": false,
@@ -1829,10 +1813,10 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "provider": "Minimax",
-      "input_per_million": 0.25,
-      "output_per_million": 1,
+      "input_per_million": 0.18,
+      "output_per_million": 0.72,
       "context_window": 204800,
-      "max_output": 131072,
+      "max_output": 196608,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2169,7 +2153,7 @@
       "input_per_million": 0.57,
       "output_per_million": 2.3,
       "context_window": 131072,
-      "max_output": 32768,
+      "max_output": 100352,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2183,7 +2167,7 @@
       "input_per_million": 0.6,
       "output_per_million": 2.5,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": 100352,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2223,8 +2207,8 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshotai",
-      "input_per_million": 0.66,
-      "output_per_million": 3.41,
+      "input_per_million": 0.55,
+      "output_per_million": 3.2,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
@@ -2238,10 +2222,10 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "provider": "Moonshotai",
-      "input_per_million": 0.61,
-      "output_per_million": 3.07,
+      "input_per_million": 0.74,
+      "output_per_million": 3.5,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text",
@@ -2285,26 +2269,11 @@
       "id": "nex-agi/nex-n2-pro",
       "name": "Nex AGI: Nex-N2-Pro",
       "provider": "Nex agi",
-      "input_per_million": 0.5,
-      "output_per_million": 2.5,
+      "input_per_million": 0.25,
+      "output_per_million": 1,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "nex-agi/nex-n2-pro:free",
-      "name": "Nex AGI: Nex-N2-Pro (free)",
-      "provider": "Nex agi",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 262144,
-      "max_output": 256000,
-      "is_free": true,
       "modalities": [
         "text",
         "image->text"
@@ -2449,9 +2418,9 @@
       "name": "NVIDIA: Nemotron 3 Super",
       "provider": "Nvidia",
       "input_per_million": 0.09,
-      "output_per_million": 0.45,
+      "output_per_million": 0.4,
       "context_window": 1000000,
-      "max_output": null,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3284,10 +3253,10 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "provider": "Openai",
-      "input_per_million": 0.04,
-      "output_per_million": 0.18,
+      "input_per_million": 0.03,
+      "output_per_million": 0.15,
       "context_window": 131072,
-      "max_output": null,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3747,22 +3716,6 @@
       "context_window": 262144,
       "max_output": 32768,
       "is_free": true,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    }
-  ],
-  "Prime intellect": [
-    {
-      "id": "prime-intellect/intellect-3",
-      "name": "Prime Intellect: INTELLECT-3",
-      "provider": "Prime intellect",
-      "input_per_million": 0.2,
-      "output_per_million": 1.1,
-      "context_window": 131072,
-      "max_output": 131072,
-      "is_free": false,
       "modalities": [
         "text->text"
       ],
@@ -4313,7 +4266,7 @@
       "input_per_million": 0.14,
       "output_per_million": 1,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": 81920,
       "is_free": false,
       "modalities": [
         "text",
@@ -4358,8 +4311,8 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "provider": "Qwen",
-      "input_per_million": 0.29,
-      "output_per_million": 3.17,
+      "input_per_million": 0.26,
+      "output_per_million": 2.39,
       "context_window": 262144,
       "max_output": 262140,
       "is_free": false,
@@ -4552,6 +4505,23 @@
       "type": "chat"
     }
   ],
+  "Sakana": [
+    {
+      "id": "sakana/fugu-ultra",
+      "name": "Sakana: Fugu Ultra",
+      "provider": "Sakana",
+      "input_per_million": 5,
+      "output_per_million": 30,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image->text"
+      ],
+      "type": "chat"
+    }
+  ],
   "Sao10k": [
     {
       "id": "sao10k/l3-lunaris-8b",
@@ -4707,10 +4677,10 @@
       "id": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
       "provider": "Thedrummer",
-      "input_per_million": 0.17,
-      "output_per_million": 0.43,
+      "input_per_million": 0.25,
+      "output_per_million": 0.5,
       "context_window": 32768,
-      "max_output": 32768,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4838,7 +4808,8 @@
       "is_free": false,
       "modalities": [
         "text",
-        "image->text"
+        "image",
+        "file->text"
       ],
       "type": "chat"
     },
@@ -4863,10 +4834,10 @@
       "id": "xiaomi/mimo-v2.5",
       "name": "Xiaomi: MiMo-V2.5",
       "provider": "Xiaomi",
-      "input_per_million": 0.14,
+      "input_per_million": 0.11,
       "output_per_million": 0.28,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text",
@@ -5028,7 +4999,7 @@
       "input_per_million": 0.98,
       "output_per_million": 3.08,
       "context_window": 202752,
-      "max_output": 65535,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5039,13 +5010,29 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "provider": "Z ai",
-      "input_per_million": 1,
-      "output_per_million": 4,
+      "input_per_million": 0.95,
+      "output_per_million": 3,
       "context_window": 1048576,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "z-ai/glm-5v-turbo",
+      "name": "Z.ai: GLM 5V Turbo",
+      "provider": "Z ai",
+      "input_per_million": 1.2,
+      "output_per_million": 4,
+      "context_window": 202752,
+      "max_output": 131072,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "video->text"
       ],
       "type": "chat"
     }
@@ -5159,8 +5146,8 @@
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
-      "input_per_million": 0.66,
-      "output_per_million": 3.41,
+      "input_per_million": 0.55,
+      "output_per_million": 3.2,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
