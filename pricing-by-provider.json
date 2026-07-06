@@ -296,22 +296,6 @@
       "type": "chat"
     },
     {
-      "id": "anthropic/claude-opus-4.6-fast",
-      "name": "Anthropic: Claude Opus 4.6 (Fast)",
-      "provider": "Anthropic",
-      "input_per_million": 30,
-      "output_per_million": 150,
-      "context_window": 1000000,
-      "max_output": 128000,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "file->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "anthropic/claude-opus-4.7",
       "name": "Anthropic: Claude Opus 4.7",
       "provider": "Anthropic",
@@ -413,6 +397,22 @@
       "provider": "Anthropic",
       "input_per_million": 3,
       "output_per_million": 15,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "provider": "Anthropic",
+      "input_per_million": 2,
+      "output_per_million": 10,
       "context_window": 1000000,
       "max_output": 128000,
       "is_free": false,
@@ -705,8 +705,8 @@
       "id": "deepseek/deepseek-chat-v3-0324",
       "name": "DeepSeek: DeepSeek V3 0324",
       "provider": "Deepseek",
-      "input_per_million": 0.2,
-      "output_per_million": 0.77,
+      "input_per_million": 0.24,
+      "output_per_million": 0.9,
       "context_window": 163840,
       "max_output": 16384,
       "is_free": false,
@@ -778,7 +778,7 @@
       "input_per_million": 0.09,
       "output_per_million": 0.18,
       "context_window": 1048576,
-      "max_output": 65536,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1276,6 +1276,22 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-3.1-flash-lite-image",
+      "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+      "provider": "Google",
+      "input_per_million": 0.25,
+      "output_per_million": 1.5,
+      "context_window": 65536,
+      "max_output": 66000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image->text",
+        "image"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-3-pro-image-preview",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
       "provider": "Google",
@@ -1710,20 +1726,6 @@
       "type": "chat"
     },
     {
-      "id": "microsoft/phi-4-mini-instruct",
-      "name": "Microsoft: Phi 4 Mini Instruct",
-      "provider": "Microsoft",
-      "input_per_million": 0.08,
-      "output_per_million": 0.35,
-      "context_window": 131072,
-      "max_output": 128000,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "microsoft/wizardlm-2-8x22b",
       "name": "WizardLM-2 8x22B",
       "provider": "Microsoft",
@@ -1758,9 +1760,9 @@
       "name": "MiniMax: MiniMax M2",
       "provider": "Minimax",
       "input_per_million": 0.26,
-      "output_per_million": 1,
+      "output_per_million": 1.02,
       "context_window": 204800,
-      "max_output": 196608,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1785,10 +1787,10 @@
       "id": "minimax/minimax-m2.1",
       "name": "MiniMax: MiniMax M2.1",
       "provider": "Minimax",
-      "input_per_million": 0.29,
-      "output_per_million": 0.95,
+      "input_per_million": 0.3,
+      "output_per_million": 1.2,
       "context_window": 204800,
-      "max_output": 196608,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2181,7 +2183,7 @@
       "input_per_million": 0.6,
       "output_per_million": 2.5,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": 100352,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2207,8 +2209,8 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshotai",
-      "input_per_million": 0.55,
-      "output_per_million": 3.2,
+      "input_per_million": 0.66,
+      "output_per_million": 3.41,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
@@ -2417,10 +2419,10 @@
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super",
       "provider": "Nvidia",
-      "input_per_million": 0.09,
-      "output_per_million": 0.4,
+      "input_per_million": 0.08,
+      "output_per_million": 0.45,
       "context_window": 1000000,
-      "max_output": 16384,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3542,20 +3544,6 @@
       "type": "chat"
     },
     {
-      "id": "openrouter/owl-alpha",
-      "name": "Owl Alpha",
-      "provider": "Openrouter",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 1048756,
-      "max_output": 262144,
-      "is_free": true,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "openrouter/pareto-code",
       "name": "Pareto Code Router",
       "provider": "Openrouter",
@@ -3682,6 +3670,34 @@
     {
       "id": "poolside/laguna-m.1:free",
       "name": "Poolside: Laguna M.1 (free)",
+      "provider": "Poolside",
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 262144,
+      "max_output": 32768,
+      "is_free": true,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1",
+      "name": "Poolside: Laguna XS 2.1",
+      "provider": "Poolside",
+      "input_per_million": 0.06,
+      "output_per_million": 0.12,
+      "context_window": 262144,
+      "max_output": 32768,
+      "is_free": false,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "name": "Poolside: Laguna XS 2.1 (free)",
       "provider": "Poolside",
       "input_per_million": 0,
       "output_per_million": 0,
@@ -3840,10 +3856,10 @@
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "provider": "Qwen",
-      "input_per_million": 0.1,
-      "output_per_million": 0.1,
+      "input_per_million": 0.15,
+      "output_per_million": 1.5,
       "context_window": 262144,
-      "max_output": 262144,
+      "max_output": null,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3882,10 +3898,10 @@
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
       "name": "Qwen: Qwen3 30B A3B Thinking 2507",
       "provider": "Qwen",
-      "input_per_million": 0.08,
-      "output_per_million": 0.4,
+      "input_per_million": 0.13,
+      "output_per_million": 1.56,
       "context_window": 131072,
-      "max_output": 131072,
+      "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3910,8 +3926,8 @@
       "id": "qwen/qwen3-8b",
       "name": "Qwen: Qwen3 8B",
       "provider": "Qwen",
-      "input_per_million": 0.05,
-      "output_per_million": 0.4,
+      "input_per_million": 0.12,
+      "output_per_million": 0.45,
       "context_window": 131072,
       "max_output": 8192,
       "is_free": false,
@@ -4153,8 +4169,8 @@
       "id": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "provider": "Qwen",
-      "input_per_million": 0.08,
-      "output_per_million": 0.5,
+      "input_per_million": 0.12,
+      "output_per_million": 0.45,
       "context_window": 256000,
       "max_output": 32768,
       "is_free": false,
@@ -4311,8 +4327,8 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "provider": "Qwen",
-      "input_per_million": 0.26,
-      "output_per_million": 2.39,
+      "input_per_million": 0.29,
+      "output_per_million": 2.4,
       "context_window": 262144,
       "max_output": 262140,
       "is_free": false,
@@ -4585,10 +4601,10 @@
       "id": "stepfun/step-3.5-flash",
       "name": "StepFun: Step 3.5 Flash",
       "provider": "Stepfun",
-      "input_per_million": 0.09,
+      "input_per_million": 0.1,
       "output_per_million": 0.3,
       "context_window": 262144,
-      "max_output": 16384,
+      "max_output": 65536,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4996,10 +5012,10 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "provider": "Z ai",
-      "input_per_million": 0.98,
-      "output_per_million": 3.08,
+      "input_per_million": 0.97,
+      "output_per_million": 3.04,
       "context_window": 202752,
-      "max_output": null,
+      "max_output": 128000,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5010,10 +5026,10 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "provider": "Z ai",
-      "input_per_million": 0.95,
-      "output_per_million": 3,
+      "input_per_million": 0.91,
+      "output_per_million": 2.86,
       "context_window": 1048576,
-      "max_output": 32768,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5058,8 +5074,8 @@
       "id": "~anthropic/claude-sonnet-latest",
       "name": "Anthropic Claude Sonnet Latest",
       "provider": "~anthropic",
-      "input_per_million": 3,
-      "output_per_million": 15,
+      "input_per_million": 2,
+      "output_per_million": 10,
       "context_window": 1000000,
       "max_output": 128000,
       "is_free": false,
@@ -5146,8 +5162,8 @@
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
-      "input_per_million": 0.55,
-      "output_per_million": 3.2,
+      "input_per_million": 0.66,
+      "output_per_million": 3.41,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
