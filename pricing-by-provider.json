@@ -174,7 +174,7 @@
       "provider": "Anthracite org",
       "input_per_million": 3,
       "output_per_million": 5,
-      "context_window": 32768,
+      "context_window": 16384,
       "max_output": 2048,
       "is_free": false,
       "modalities": [
@@ -422,6 +422,38 @@
         "file->text"
       ],
       "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "name": "Claude Opus 5",
+      "provider": "Anthropic",
+      "input_per_million": 5,
+      "output_per_million": 25,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-opus-5-fast",
+      "name": "Claude Opus 5 (Fast)",
+      "provider": "Anthropic",
+      "input_per_million": 10,
+      "output_per_million": 50,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
     }
   ],
   "Arcee ai": [
@@ -429,10 +461,10 @@
       "id": "arcee-ai/trinity-large-thinking",
       "name": "Arcee AI: Trinity Large Thinking",
       "provider": "Arcee ai",
-      "input_per_million": 0.25,
-      "output_per_million": 0.8,
+      "input_per_million": 0.22,
+      "output_per_million": 0.85,
       "context_window": 262144,
-      "max_output": 80000,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -461,7 +493,7 @@
       "provider": "Baidu",
       "input_per_million": 0.42,
       "output_per_million": 1.25,
-      "context_window": 131072,
+      "context_window": 123000,
       "max_output": 16000,
       "is_free": false,
       "modalities": [
@@ -665,7 +697,7 @@
       "provider": "Deepseek",
       "input_per_million": 0.2,
       "output_per_million": 0.8,
-      "context_window": 131072,
+      "context_window": 163840,
       "max_output": 16000,
       "is_free": false,
       "modalities": [
@@ -707,7 +739,7 @@
       "provider": "Deepseek",
       "input_per_million": 0.27,
       "output_per_million": 1,
-      "context_window": 131072,
+      "context_window": 163840,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -747,10 +779,10 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash",
       "provider": "Deepseek",
-      "input_per_million": 0.1,
-      "output_per_million": 0.2,
+      "input_per_million": 0.14,
+      "output_per_million": 0.28,
       "context_window": 1048576,
-      "max_output": null,
+      "max_output": 393216,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -805,7 +837,7 @@
       "provider": "Deepseek",
       "input_per_million": 0.8,
       "output_per_million": 0.8,
-      "context_window": 128000,
+      "context_window": 8192,
       "max_output": 8192,
       "is_free": false,
       "modalities": [
@@ -982,7 +1014,7 @@
       "provider": "Google",
       "input_per_million": 2,
       "output_per_million": 12,
-      "context_window": 1048756,
+      "context_window": 1048576,
       "max_output": 65536,
       "is_free": false,
       "modalities": [
@@ -1000,6 +1032,42 @@
       "provider": "Google",
       "input_per_million": 1.5,
       "output_per_million": 9,
+      "context_window": 1048576,
+      "max_output": 65536,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite",
+      "name": "Google: Gemini 3.5 Flash Lite",
+      "provider": "Google",
+      "input_per_million": 0.3,
+      "output_per_million": 2.5,
+      "context_window": 1048576,
+      "max_output": 65536,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "google/gemini-3.6-flash",
+      "name": "Google: Gemini 3.6 Flash",
+      "provider": "Google",
+      "input_per_million": 1.5,
+      "output_per_million": 7.5,
       "context_window": 1048576,
       "max_output": 65536,
       "is_free": false,
@@ -1045,10 +1113,10 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "provider": "Google",
-      "input_per_million": 0.1,
-      "output_per_million": 0.3,
-      "context_window": 131072,
-      "max_output": null,
+      "input_per_million": 0.08,
+      "output_per_million": 0.45,
+      "context_window": 262144,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text",
@@ -1089,10 +1157,10 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "provider": "Google",
-      "input_per_million": 0.07,
-      "output_per_million": 0.34,
+      "input_per_million": 0.12,
+      "output_per_million": 0.35,
       "context_window": 262144,
-      "max_output": 16384,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text",
@@ -1121,8 +1189,8 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "provider": "Google",
-      "input_per_million": 0.22,
-      "output_per_million": 0.55,
+      "input_per_million": 0.14,
+      "output_per_million": 0.4,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
@@ -1203,8 +1271,8 @@
       "provider": "Google",
       "input_per_million": 0.5,
       "output_per_million": 3,
-      "context_window": 131072,
-      "max_output": 32768,
+      "context_window": 65536,
+      "max_output": 65536,
       "is_free": false,
       "modalities": [
         "text",
@@ -1236,7 +1304,7 @@
       "input_per_million": 0.25,
       "output_per_million": 1.5,
       "context_window": 65536,
-      "max_output": 65536,
+      "max_output": 66000,
       "is_free": false,
       "modalities": [
         "text",
@@ -1267,7 +1335,7 @@
       "provider": "Google",
       "input_per_million": 2,
       "output_per_million": 12,
-      "context_window": 65536,
+      "context_window": 131072,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -1285,7 +1353,7 @@
       "provider": "Gryphe",
       "input_per_million": 0.06,
       "output_per_million": 0.06,
-      "context_window": 4096,
+      "context_window": 8192,
       "max_output": 4096,
       "is_free": false,
       "modalities": [
@@ -1382,32 +1450,16 @@
         "text->text"
       ],
       "type": "chat"
-    }
-  ],
-  "Inflection": [
-    {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "provider": "Inflection",
-      "input_per_million": 2.5,
-      "output_per_million": 10,
-      "context_window": 8000,
-      "max_output": 1024,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
-      "provider": "Inflection",
-      "input_per_million": 2.5,
-      "output_per_million": 10,
-      "context_window": 8000,
-      "max_output": 1024,
-      "is_free": false,
+      "id": "inclusionai/ling-3.0-flash:free",
+      "name": "Ling-3.0-flash (free)",
+      "provider": "Inclusionai",
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 262144,
+      "max_output": 32768,
+      "is_free": true,
       "modalities": [
         "text->text"
       ],
@@ -1435,7 +1487,7 @@
       "provider": "Kwaipilot",
       "input_per_million": 0.3,
       "output_per_million": 1.2,
-      "context_window": 256000,
+      "context_window": 262144,
       "max_output": 80000,
       "is_free": false,
       "modalities": [
@@ -1467,6 +1519,22 @@
       "output_per_million": 0.75,
       "context_window": 8000,
       "max_output": 2000,
+      "is_free": false,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    }
+  ],
+  "Meituan": [
+    {
+      "id": "meituan/longcat-2.0",
+      "name": "Meituan: LongCat 2.0",
+      "provider": "Meituan",
+      "input_per_million": 0.3,
+      "output_per_million": 1.2,
+      "context_window": 1048756,
+      "max_output": 262144,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1529,7 +1597,7 @@
       "provider": "Meta llama",
       "input_per_million": 0.03,
       "output_per_million": 0.2,
-      "context_window": 131072,
+      "context_window": 60000,
       "max_output": 60000,
       "is_free": false,
       "modalities": [
@@ -1542,9 +1610,9 @@
       "name": "Meta: Llama 3.2 3B Instruct",
       "provider": "Meta llama",
       "input_per_million": 0.05,
-      "output_per_million": 0.34,
+      "output_per_million": 0.33,
       "context_window": 131072,
-      "max_output": 80000,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1586,7 +1654,7 @@
       "provider": "Meta llama",
       "input_per_million": 0.1,
       "output_per_million": 0.3,
-      "context_window": 10000000,
+      "context_window": 1310720,
       "max_output": 16384,
       "is_free": false,
       "modalities": [
@@ -1601,7 +1669,7 @@
       "provider": "Meta llama",
       "input_per_million": 0.18,
       "output_per_million": 0.18,
-      "context_window": 163840,
+      "context_window": 1048576,
       "max_output": 16384,
       "is_free": false,
       "modalities": [
@@ -1632,7 +1700,7 @@
       "provider": "Microsoft",
       "input_per_million": 0.62,
       "output_per_million": 0.62,
-      "context_window": 65536,
+      "context_window": 65535,
       "max_output": 8000,
       "is_free": false,
       "modalities": [
@@ -1660,8 +1728,8 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "provider": "Minimax",
-      "input_per_million": 0.3,
-      "output_per_million": 1.2,
+      "input_per_million": 0.26,
+      "output_per_million": 1.02,
       "context_window": 204800,
       "max_output": 131072,
       "is_free": false,
@@ -1977,7 +2045,7 @@
       "provider": "Mistralai",
       "input_per_million": 0.1,
       "output_per_million": 0.3,
-      "context_window": 131072,
+      "context_window": 256000,
       "max_output": null,
       "is_free": false,
       "modalities": [
@@ -2110,8 +2178,8 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshotai",
-      "input_per_million": 0.68,
-      "output_per_million": 3.42,
+      "input_per_million": 0.65,
+      "output_per_million": 2.72,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
@@ -2125,8 +2193,8 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "provider": "Moonshotai",
-      "input_per_million": 0.85,
-      "output_per_million": 3.8,
+      "input_per_million": 0.73,
+      "output_per_million": 3.5,
       "context_window": 262144,
       "max_output": 262144,
       "is_free": false,
@@ -2338,7 +2406,7 @@
       "provider": "Nvidia",
       "input_per_million": 0,
       "output_per_million": 0,
-      "context_window": 1000000,
+      "context_window": 262144,
       "max_output": 262144,
       "is_free": true,
       "modalities": [
@@ -2350,10 +2418,10 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "provider": "Nvidia",
-      "input_per_million": 0.6,
-      "output_per_million": 3.6,
-      "context_window": 1000000,
-      "max_output": null,
+      "input_per_million": 0.5,
+      "output_per_million": 2.2,
+      "context_window": 512288,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2727,20 +2795,6 @@
       "type": "chat"
     },
     {
-      "id": "openai/gpt-4o-mini-search-preview",
-      "name": "OpenAI: GPT-4o-mini Search Preview",
-      "provider": "Openai",
-      "input_per_million": 0.15,
-      "output_per_million": 0.6,
-      "context_window": 128000,
-      "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "openai/gpt-5",
       "name": "OpenAI: GPT-5",
       "provider": "Openai",
@@ -2938,7 +2992,7 @@
       "input_per_million": 0.25,
       "output_per_million": 2,
       "context_window": 400000,
-      "max_output": 100000,
+      "max_output": 128000,
       "is_free": false,
       "modalities": [
         "text",
@@ -3269,7 +3323,7 @@
       "name": "OpenAI: gpt-oss-20b",
       "provider": "Openai",
       "input_per_million": 0.03,
-      "output_per_million": 0.13,
+      "output_per_million": 0.14,
       "context_window": 131072,
       "max_output": 131072,
       "is_free": false,
@@ -3686,6 +3740,34 @@
       "type": "chat"
     },
     {
+      "id": "poolside/laguna-s-2.1",
+      "name": "Poolside: Laguna S 2.1",
+      "provider": "Poolside",
+      "input_per_million": 0.1,
+      "output_per_million": 0.2,
+      "context_window": 1048576,
+      "max_output": 131072,
+      "is_free": false,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "provider": "Poolside",
+      "input_per_million": 0,
+      "output_per_million": 0,
+      "context_window": 262144,
+      "max_output": 32768,
+      "is_free": true,
+      "modalities": [
+        "text->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "poolside/laguna-xs-2.1",
       "name": "Poolside: Laguna XS 2.1",
       "provider": "Poolside",
@@ -3763,7 +3845,7 @@
       "provider": "Qwen",
       "input_per_million": 0.04,
       "output_per_million": 0.1,
-      "context_window": 131072,
+      "context_window": 32768,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -3777,7 +3859,7 @@
       "provider": "Qwen",
       "input_per_million": 0.8,
       "output_per_million": 1,
-      "context_window": 131072,
+      "context_window": 128000,
       "max_output": 128000,
       "is_free": false,
       "modalities": [
@@ -3790,10 +3872,10 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "provider": "Qwen",
-      "input_per_million": 0.12,
-      "output_per_million": 0.24,
-      "context_window": 131702,
-      "max_output": 16384,
+      "input_per_million": 0.23,
+      "output_per_million": 0.91,
+      "context_window": 131072,
+      "max_output": 8192,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3846,10 +3928,10 @@
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "provider": "Qwen",
-      "input_per_million": 0.13,
-      "output_per_million": 0.52,
+      "input_per_million": 0.12,
+      "output_per_million": 0.5,
       "context_window": 131072,
-      "max_output": 8192,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3860,10 +3942,10 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "provider": "Qwen",
-      "input_per_million": 0.1,
-      "output_per_million": 0.3,
+      "input_per_million": 0.05,
+      "output_per_million": 0.19,
       "context_window": 262144,
-      "max_output": null,
+      "max_output": 32000,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3876,7 +3958,7 @@
       "provider": "Qwen",
       "input_per_million": 0.13,
       "output_per_million": 1.56,
-      "context_window": 131072,
+      "context_window": 81920,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -3918,7 +4000,7 @@
       "provider": "Qwen",
       "input_per_million": 0.07,
       "output_per_million": 0.27,
-      "context_window": 160000,
+      "context_window": 262144,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -3932,7 +4014,7 @@
       "provider": "Qwen",
       "input_per_million": 0.3,
       "output_per_million": 1,
-      "context_window": 1048576,
+      "context_window": 262144,
       "max_output": 65536,
       "is_free": false,
       "modalities": [
@@ -4044,7 +4126,7 @@
       "provider": "Qwen",
       "input_per_million": 0.21,
       "output_per_million": 1.9,
-      "context_window": 131072,
+      "context_window": 262144,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4072,10 +4154,10 @@
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "provider": "Qwen",
-      "input_per_million": 0.13,
-      "output_per_million": 0.52,
+      "input_per_million": 0.15,
+      "output_per_million": 0.6,
       "context_window": 262144,
-      "max_output": 32768,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text",
@@ -4089,7 +4171,7 @@
       "provider": "Qwen",
       "input_per_million": 0.13,
       "output_per_million": 1.56,
-      "context_window": 131072,
+      "context_window": 262144,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4104,7 +4186,7 @@
       "provider": "Qwen",
       "input_per_million": 0.1,
       "output_per_million": 0.42,
-      "context_window": 262144,
+      "context_window": 131072,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4119,7 +4201,7 @@
       "provider": "Qwen",
       "input_per_million": 0.12,
       "output_per_million": 0.45,
-      "context_window": 256000,
+      "context_window": 262144,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4134,7 +4216,7 @@
       "provider": "Qwen",
       "input_per_million": 0.12,
       "output_per_million": 1.37,
-      "context_window": 256000,
+      "context_window": 131072,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4211,10 +4293,10 @@
       "id": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "provider": "Qwen",
-      "input_per_million": 0.26,
-      "output_per_million": 2.6,
+      "input_per_million": 0.2,
+      "output_per_million": 1.56,
       "context_window": 262144,
-      "max_output": 81920,
+      "max_output": 65536,
       "is_free": false,
       "modalities": [
         "text",
@@ -4227,7 +4309,7 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "provider": "Qwen",
-      "input_per_million": 0.14,
+      "input_per_million": 0.15,
       "output_per_million": 1,
       "context_window": 262144,
       "max_output": 262144,
@@ -4275,8 +4357,8 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "provider": "Qwen",
-      "input_per_million": 0.45,
-      "output_per_million": 2.7,
+      "input_per_million": 0.3,
+      "output_per_million": 2,
       "context_window": 262144,
       "max_output": 65536,
       "is_free": false,
@@ -4384,7 +4466,7 @@
       "provider": "Qwen",
       "input_per_million": 0.36,
       "output_per_million": 0.4,
-      "context_window": 131072,
+      "context_window": 32768,
       "max_output": 16384,
       "is_free": false,
       "modalities": [
@@ -4398,7 +4480,7 @@
       "provider": "Qwen",
       "input_per_million": 0.66,
       "output_per_million": 1,
-      "context_window": 128000,
+      "context_window": 32768,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -4551,7 +4633,7 @@
       "provider": "Stepfun",
       "input_per_million": 0.2,
       "output_per_million": 1.15,
-      "context_window": 256000,
+      "context_window": 262144,
       "max_output": 256000,
       "is_free": false,
       "modalities": [
@@ -4581,25 +4663,11 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "provider": "Tencent",
-      "input_per_million": 0.2,
-      "output_per_million": 0.8,
+      "input_per_million": 0.13,
+      "output_per_million": 0.53,
       "context_window": 262144,
-      "max_output": 131072,
+      "max_output": 128000,
       "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "tencent/hy3:free",
-      "name": "Tencent: Hy3 (free)",
-      "provider": "Tencent",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 262144,
-      "max_output": 262144,
-      "is_free": true,
       "modalities": [
         "text->text"
       ],
@@ -4704,7 +4772,7 @@
       "input_per_million": 0.45,
       "output_per_million": 0.65,
       "context_window": 6144,
-      "max_output": 4096,
+      "max_output": 2048,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4833,7 +4901,7 @@
       "provider": "Xiaomi",
       "input_per_million": 0.14,
       "output_per_million": 0.28,
-      "context_window": 1048576,
+      "context_window": 1050000,
       "max_output": 131072,
       "is_free": false,
       "modalities": [
@@ -4850,7 +4918,7 @@
       "provider": "Xiaomi",
       "input_per_million": 0.44,
       "output_per_million": 0.87,
-      "context_window": 1048576,
+      "context_window": 1050000,
       "max_output": 131072,
       "is_free": false,
       "modalities": [
@@ -4909,7 +4977,7 @@
       "provider": "Z ai",
       "input_per_million": 0.5,
       "output_per_million": 2,
-      "context_window": 202752,
+      "context_window": 204800,
       "max_output": 131072,
       "is_free": false,
       "modalities": [
@@ -4939,7 +5007,7 @@
       "provider": "Z ai",
       "input_per_million": 0.4,
       "output_per_million": 1.75,
-      "context_window": 202752,
+      "context_window": 204800,
       "max_output": 131072,
       "is_free": false,
       "modalities": [
@@ -4953,8 +5021,8 @@
       "provider": "Z ai",
       "input_per_million": 0.06,
       "output_per_million": 0.4,
-      "context_window": 200000,
-      "max_output": 131072,
+      "context_window": 202752,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4995,7 +5063,7 @@
       "provider": "Z ai",
       "input_per_million": 0.97,
       "output_per_million": 3.04,
-      "context_window": 202752,
+      "context_window": 204800,
       "max_output": 128000,
       "is_free": false,
       "modalities": [
@@ -5007,8 +5075,8 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "provider": "Z ai",
-      "input_per_million": 0.96,
-      "output_per_million": 3.01,
+      "input_per_million": 0.81,
+      "output_per_million": 2.53,
       "context_window": 1048576,
       "max_output": 131072,
       "is_free": false,
@@ -5106,7 +5174,7 @@
       "name": "Google Gemini Flash Latest",
       "provider": "~google",
       "input_per_million": 1.5,
-      "output_per_million": 9,
+      "output_per_million": 7.5,
       "context_window": 1048576,
       "max_output": 65536,
       "is_free": false,
