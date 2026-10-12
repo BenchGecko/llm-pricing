@@ -277,6 +277,38 @@
       "type": "chat"
     },
     {
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "provider": "Anthropic",
+      "input_per_million": 0.1,
+      "output_per_million": 0.5,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "anthropic/claude-haiku-5.5:batch",
+      "name": "Anthropic: Claude Haiku 5.5 (batch)",
+      "provider": "Anthropic",
+      "input_per_million": 0.05,
+      "output_per_million": 0.25,
+      "context_window": 1000000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "anthropic/claude-opus-4.1",
       "name": "Anthropic: Claude Opus 4.1",
       "provider": "Anthropic",
@@ -677,23 +709,6 @@
       "type": "chat"
     }
   ],
-  "Baidu": [
-    {
-      "id": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
-      "provider": "Baidu",
-      "input_per_million": 0.42,
-      "output_per_million": 1.25,
-      "context_window": 123000,
-      "max_output": 16000,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    }
-  ],
   "Bytedance": [
     {
       "id": "bytedance/ui-tars-1.5-7b",
@@ -917,10 +932,10 @@
       "id": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "provider": "Deepseek",
-      "input_per_million": 0.26,
-      "output_per_million": 1.03,
+      "input_per_million": 0.32,
+      "output_per_million": 0.89,
       "context_window": 163840,
-      "max_output": 16000,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -973,10 +988,10 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "provider": "Deepseek",
-      "input_per_million": 0.28,
-      "output_per_million": 0.42,
+      "input_per_million": 0.26,
+      "output_per_million": 0.8,
       "context_window": 163840,
-      "max_output": 65536,
+      "max_output": 147456,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1016,7 +1031,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "provider": "Deepseek",
       "input_per_million": 0.02,
-      "output_per_million": 1.28,
+      "output_per_million": 0.64,
       "context_window": 1048576,
       "max_output": 943718,
       "is_free": false,
@@ -1044,8 +1059,8 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "provider": "Deepseek",
-      "input_per_million": 0.21,
-      "output_per_million": 0.42,
+      "input_per_million": 0.43,
+      "output_per_million": 0.86,
       "context_window": 1048576,
       "max_output": 384000,
       "is_free": false,
@@ -1058,10 +1073,10 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "provider": "Deepseek",
-      "input_per_million": 0.4,
-      "output_per_million": 5,
+      "input_per_million": 0.66,
+      "output_per_million": 1.98,
       "context_window": 1048576,
-      "max_output": 943718,
+      "max_output": 393216,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -1072,10 +1087,10 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "provider": "Deepseek",
-      "input_per_million": 0.3,
-      "output_per_million": 1.2,
+      "input_per_million": 0.15,
+      "output_per_million": 0.6,
       "context_window": 1048576,
-      "max_output": 943718,
+      "max_output": 393216,
       "is_free": false,
       "modalities": [
         "text",
@@ -1831,6 +1846,22 @@
       "type": "chat"
     },
     {
+      "id": "google/gemini-nano-banana-2.1",
+      "name": "Google: Nano Banana 2.1",
+      "provider": "Google",
+      "input_per_million": 1.5,
+      "output_per_million": 7.5,
+      "context_window": 65536,
+      "max_output": 58982,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image->text",
+        "image"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "google/gemini-3-pro-image-preview",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
       "provider": "Google",
@@ -1969,14 +2000,14 @@
       "type": "chat"
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
       "provider": "Inclusionai",
-      "input_per_million": 0,
-      "output_per_million": 0,
+      "input_per_million": 0.04,
+      "output_per_million": 0.12,
       "context_window": 262144,
       "max_output": 32768,
-      "is_free": true,
+      "is_free": false,
       "modalities": [
         "text->text"
       ],
@@ -2005,7 +2036,7 @@
       "input_per_million": 0,
       "output_per_million": 0,
       "context_window": 262144,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": true,
       "modalities": [
         "text->text"
@@ -2036,22 +2067,6 @@
       "output_per_million": 0.15,
       "context_window": 128000,
       "max_output": 8192,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    }
-  ],
-  "Kwaipilot": [
-    {
-      "id": "kwaipilot/kat-coder-pro-v2.5",
-      "name": "Kwaipilot: KAT-Coder-Pro V2.5",
-      "provider": "Kwaipilot",
-      "input_per_million": 0.74,
-      "output_per_million": 2.96,
-      "context_window": 262144,
-      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2112,10 +2127,10 @@
       "id": "meta/muse-glimmer-30b",
       "name": "Meta: Muse Glimmer 30B",
       "provider": "Meta",
-      "input_per_million": 0.35,
-      "output_per_million": 1.5,
+      "input_per_million": 0.3,
+      "output_per_million": 1.2,
       "context_window": 131072,
-      "max_output": 117964,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text",
@@ -2299,10 +2314,10 @@
       "id": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "provider": "Meta llama",
-      "input_per_million": 0.1,
-      "output_per_million": 0.3,
+      "input_per_million": 0.18,
+      "output_per_million": 0.59,
       "context_window": 1310720,
-      "max_output": 16384,
+      "max_output": 117964,
       "is_free": false,
       "modalities": [
         "text",
@@ -2642,6 +2657,21 @@
       "type": "chat"
     },
     {
+      "id": "mistralai/mistral-large-4-0",
+      "name": "Mistral: Mistral Large 4",
+      "provider": "Mistralai",
+      "input_per_million": 0.68,
+      "output_per_million": 2.09,
+      "context_window": 1048576,
+      "max_output": 262144,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "mistralai/mistral-medium-3",
       "name": "Mistral: Mistral Medium 3",
       "provider": "Mistralai",
@@ -2725,7 +2755,7 @@
       "id": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "provider": "Mistralai",
-      "input_per_million": 0.02,
+      "input_per_million": 0.03,
       "output_per_million": 0.03,
       "context_window": 131072,
       "max_output": 16384,
@@ -2892,7 +2922,7 @@
       "input_per_million": 0.6,
       "output_per_million": 2.5,
       "context_window": 262144,
-      "max_output": 235929,
+      "max_output": 98304,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -2903,8 +2933,8 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "provider": "Moonshotai",
-      "input_per_million": 0.45,
-      "output_per_million": 2.25,
+      "input_per_million": 0.5,
+      "output_per_million": 2.5,
       "context_window": 262144,
       "max_output": 235929,
       "is_free": false,
@@ -2918,8 +2948,8 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "Moonshotai",
-      "input_per_million": 0.95,
-      "output_per_million": 4,
+      "input_per_million": 0.65,
+      "output_per_million": 3.41,
       "context_window": 262144,
       "max_output": 235929,
       "is_free": false,
@@ -2948,8 +2978,8 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "provider": "Moonshotai",
-      "input_per_million": 0.67,
-      "output_per_million": 14,
+      "input_per_million": 0.73,
+      "output_per_million": 10,
       "context_window": 1048576,
       "max_output": 943718,
       "is_free": false,
@@ -3088,8 +3118,8 @@
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "provider": "Nvidia",
-      "input_per_million": 0.05,
-      "output_per_million": 0.2,
+      "input_per_million": 0.06,
+      "output_per_million": 0.24,
       "context_window": 262144,
       "max_output": 235929,
       "is_free": false,
@@ -3147,10 +3177,10 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "provider": "Nvidia",
-      "input_per_million": 0.5,
-      "output_per_million": 2.2,
+      "input_per_million": 0.6,
+      "output_per_million": 2.4,
       "context_window": 262144,
-      "max_output": 16384,
+      "max_output": 182520,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -3205,10 +3235,10 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "provider": "Nvidia",
-      "input_per_million": 0.06,
-      "output_per_million": 0.16,
+      "input_per_million": 0.07,
+      "output_per_million": 0.2,
       "context_window": 262144,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -4591,11 +4621,43 @@
       "type": "chat"
     },
     {
+      "id": "openai/gpt-6.1-sol:batch",
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "provider": "Openai",
+      "input_per_million": 1,
+      "output_per_million": 5,
+      "context_window": 1050000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
       "id": "openai/gpt-6.1-sol-pro",
       "name": "OpenAI: GPT-6.1 Sol Pro",
       "provider": "Openai",
       "input_per_million": 2,
       "output_per_million": 10,
+      "context_window": 1050000,
+      "max_output": 128000,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "file->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "openai/gpt-6.1-sol-pro:batch",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "provider": "Openai",
+      "input_per_million": 1,
+      "output_per_million": 5,
       "context_window": 1050000,
       "max_output": 128000,
       "is_free": false,
@@ -5135,20 +5197,6 @@
   ],
   "Qwen": [
     {
-      "id": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen: Qwen Plus 0728",
-      "provider": "Qwen",
-      "input_per_million": 0.26,
-      "output_per_million": 0.78,
-      "context_window": 1000000,
-      "max_output": 32768,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen-plus",
       "name": "Qwen: Qwen-Plus",
       "provider": "Qwen",
@@ -5197,22 +5245,8 @@
       "provider": "Qwen",
       "input_per_million": 0.12,
       "output_per_million": 0.24,
-      "context_window": 131072,
+      "context_window": 40960,
       "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b",
-      "name": "Qwen: Qwen3 235B A22B",
-      "provider": "Qwen",
-      "input_per_million": 0.45,
-      "output_per_million": 1.82,
-      "context_window": 131072,
-      "max_output": 8192,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5224,9 +5258,9 @@
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "provider": "Qwen",
       "input_per_million": 0.09,
-      "output_per_million": 0.35,
+      "output_per_million": 0.55,
       "context_window": 262144,
-      "max_output": 235929,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5237,10 +5271,10 @@
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "provider": "Qwen",
-      "input_per_million": 0.23,
-      "output_per_million": 2.3,
-      "context_window": 131072,
-      "max_output": 117964,
+      "input_per_million": 0.45,
+      "output_per_million": 3.5,
+      "context_window": 128000,
+      "max_output": 16384,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5253,7 +5287,7 @@
       "provider": "Qwen",
       "input_per_million": 0.12,
       "output_per_million": 0.5,
-      "context_window": 131072,
+      "context_window": 40960,
       "max_output": 16384,
       "is_free": false,
       "modalities": [
@@ -5265,24 +5299,10 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "provider": "Qwen",
-      "input_per_million": 0.05,
-      "output_per_million": 0.19,
+      "input_per_million": 0.1,
+      "output_per_million": 0.3,
       "context_window": 262144,
-      "max_output": 32000,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-30b-a3b-thinking-2507",
-      "name": "Qwen: Qwen3 30B A3B Thinking 2507",
-      "provider": "Qwen",
-      "input_per_million": 0.2,
-      "output_per_million": 2.4,
-      "context_window": 81920,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5297,20 +5317,6 @@
       "output_per_million": 0.28,
       "context_window": 131072,
       "max_output": 16384,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-8b",
-      "name": "Qwen: Qwen3 8B",
-      "provider": "Qwen",
-      "input_per_million": 0.12,
-      "output_per_million": 0.45,
-      "context_window": 131072,
-      "max_output": 8192,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5374,48 +5380,6 @@
       "type": "chat"
     },
     {
-      "id": "qwen/qwen3-coder-plus",
-      "name": "Qwen: Qwen3 Coder Plus",
-      "provider": "Qwen",
-      "input_per_million": 0.65,
-      "output_per_million": 3.25,
-      "context_window": 1000000,
-      "max_output": 65536,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max",
-      "name": "Qwen: Qwen3 Max",
-      "provider": "Qwen",
-      "input_per_million": 0.78,
-      "output_per_million": 3.9,
-      "context_window": 262144,
-      "max_output": 65536,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-max-thinking",
-      "name": "Qwen: Qwen3 Max Thinking",
-      "provider": "Qwen",
-      "input_per_million": 0.78,
-      "output_per_million": 3.9,
-      "context_window": 262144,
-      "max_output": 65536,
-      "is_free": false,
-      "modalities": [
-        "text->text"
-      ],
-      "type": "chat"
-    },
-    {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "provider": "Qwen",
@@ -5436,7 +5400,7 @@
       "input_per_million": 0.15,
       "output_per_million": 1.2,
       "context_window": 262144,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -5450,21 +5414,6 @@
       "input_per_million": 0.21,
       "output_per_million": 1.9,
       "context_window": 262144,
-      "max_output": 32768,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
-      "provider": "Qwen",
-      "input_per_million": 0.4,
-      "output_per_million": 4,
-      "context_window": 131072,
       "max_output": 32768,
       "is_free": false,
       "modalities": [
@@ -5492,25 +5441,10 @@
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "provider": "Qwen",
-      "input_per_million": 0.2,
-      "output_per_million": 2.4,
+      "input_per_million": 0.29,
+      "output_per_million": 1,
       "context_window": 262144,
-      "max_output": 32768,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-32b-instruct",
-      "name": "Qwen: Qwen3 VL 32B Instruct",
-      "provider": "Qwen",
-      "input_per_million": 0.1,
-      "output_per_million": 0.42,
-      "context_window": 131072,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text",
@@ -5522,25 +5456,10 @@
       "id": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "provider": "Qwen",
-      "input_per_million": 0.12,
-      "output_per_million": 0.45,
+      "input_per_million": 0.25,
+      "output_per_million": 0.75,
       "context_window": 262144,
-      "max_output": 32768,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3-vl-8b-thinking",
-      "name": "Qwen: Qwen3 VL 8B Thinking",
-      "provider": "Qwen",
-      "input_per_million": 0.18,
-      "output_per_million": 2.1,
-      "context_window": 131072,
-      "max_output": 32768,
+      "max_output": 235929,
       "is_free": false,
       "modalities": [
         "text",
@@ -5616,10 +5535,10 @@
       "id": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "provider": "Qwen",
-      "input_per_million": 0.2,
-      "output_per_million": 1.56,
+      "input_per_million": 0.26,
+      "output_per_million": 2.6,
       "context_window": 262144,
-      "max_output": 65536,
+      "max_output": 81920,
       "is_free": false,
       "modalities": [
         "text",
@@ -5632,10 +5551,10 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "provider": "Qwen",
-      "input_per_million": 0.15,
-      "output_per_million": 1,
+      "input_per_million": 0.08,
+      "output_per_million": 0.75,
       "context_window": 262144,
-      "max_output": 235929,
+      "max_output": 32768,
       "is_free": false,
       "modalities": [
         "text",
@@ -5681,9 +5600,9 @@
       "name": "Qwen: Qwen3.6 27B",
       "provider": "Qwen",
       "input_per_million": 0.32,
-      "output_per_million": 3.25,
+      "output_per_million": 3.2,
       "context_window": 262144,
-      "max_output": 262140,
+      "max_output": 81920,
       "is_free": false,
       "modalities": [
         "text",
@@ -5696,10 +5615,10 @@
       "id": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "provider": "Qwen",
-      "input_per_million": 0.15,
-      "output_per_million": 1,
+      "input_per_million": 0.1,
+      "output_per_million": 0.95,
       "context_window": 262144,
-      "max_output": 235929,
+      "max_output": 65536,
       "is_free": false,
       "modalities": [
         "text",
@@ -5721,20 +5640,6 @@
         "text",
         "image",
         "video->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3.6-max-preview",
-      "name": "Qwen: Qwen3.6 Max Preview",
-      "provider": "Qwen",
-      "input_per_million": 1.03,
-      "output_per_million": 6.16,
-      "context_window": 262144,
-      "max_output": 65536,
-      "is_free": false,
-      "modalities": [
-        "text->text"
       ],
       "type": "chat"
     },
@@ -5817,27 +5722,11 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "provider": "Qwen",
-      "input_per_million": 0.43,
-      "output_per_million": 2.55,
+      "input_per_million": 0.04,
+      "output_per_million": 2.3,
       "context_window": 1000000,
-      "max_output": 131072,
-      "is_free": false,
-      "modalities": [
-        "text",
-        "image",
-        "video->text"
-      ],
-      "type": "chat"
-    },
-    {
-      "id": "qwen/qwen3.8-27b:free",
-      "name": "Qwen: Qwen3.8 27B (free)",
-      "provider": "Qwen",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 262144,
       "max_output": 235929,
-      "is_free": true,
+      "is_free": false,
       "modalities": [
         "text",
         "image",
@@ -6110,24 +5999,6 @@
       "type": "chat"
     }
   ],
-  "Stealth": [
-    {
-      "id": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha",
-      "provider": "Stealth",
-      "input_per_million": 0,
-      "output_per_million": 0,
-      "context_window": 1000000,
-      "max_output": 524288,
-      "is_free": true,
-      "modalities": [
-        "text",
-        "image",
-        "video->text"
-      ],
-      "type": "chat"
-    }
-  ],
   "Stepfun": [
     {
       "id": "stepfun/step-3.5-flash",
@@ -6151,6 +6022,22 @@
       "output_per_million": 1.15,
       "context_window": 262144,
       "max_output": 230400,
+      "is_free": false,
+      "modalities": [
+        "text",
+        "image",
+        "video->text"
+      ],
+      "type": "chat"
+    },
+    {
+      "id": "stepfun/step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "provider": "Stepfun",
+      "input_per_million": 1,
+      "output_per_million": 2.7,
+      "context_window": 1000000,
+      "max_output": 64000,
       "is_free": false,
       "modalities": [
         "text",
@@ -6309,10 +6196,10 @@
       "id": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
       "provider": "Thinkingmachines",
-      "input_per_million": 0.95,
+      "input_per_million": 1,
       "output_per_million": 4.05,
       "context_window": 524288,
-      "max_output": 262144,
+      "max_output": 471859,
       "is_free": false,
       "modalities": [
         "text",
@@ -6760,10 +6647,10 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "provider": "Z ai",
-      "input_per_million": 0.43,
-      "output_per_million": 1.75,
+      "input_per_million": 0.5,
+      "output_per_million": 2,
       "context_window": 204800,
-      "max_output": 16384,
+      "max_output": 131072,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -6846,10 +6733,10 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "provider": "Z ai",
-      "input_per_million": 1.4,
-      "output_per_million": 4.4,
+      "input_per_million": 0.97,
+      "output_per_million": 3.04,
       "context_window": 204800,
-      "max_output": 131072,
+      "max_output": 128000,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -6860,10 +6747,10 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "provider": "Z ai",
-      "input_per_million": 0.02,
-      "output_per_million": 16,
+      "input_per_million": 0.06,
+      "output_per_million": 7,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 943718,
       "is_free": false,
       "modalities": [
         "text->text"
@@ -6874,8 +6761,8 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "provider": "Z ai",
-      "input_per_million": 0.05,
-      "output_per_million": 7,
+      "input_per_million": 0.08,
+      "output_per_million": 4.8,
       "context_window": 1048576,
       "max_output": 943718,
       "is_free": false,
@@ -6902,10 +6789,10 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "provider": "Z ai",
-      "input_per_million": 0.15,
-      "output_per_million": 0.5,
+      "input_per_million": 0.02,
+      "output_per_million": 1.2,
       "context_window": 1048576,
-      "max_output": 943717,
+      "max_output": 943718,
       "is_free": false,
       "modalities": [
         "text",
@@ -6998,10 +6885,10 @@
       "id": "~anthropic/claude-haiku-latest",
       "name": "Anthropic: Claude Haiku Latest",
       "provider": "~anthropic",
-      "input_per_million": 1,
-      "output_per_million": 5,
-      "context_window": 200000,
-      "max_output": 64000,
+      "input_per_million": 0.1,
+      "output_per_million": 0.5,
+      "context_window": 1000000,
+      "max_output": 128000,
       "is_free": false,
       "modalities": [
         "text",
@@ -7048,10 +6935,10 @@
       "id": "~deepseek/deepseek-flash-latest",
       "name": "DeepSeek: DeepSeek Flash Latest",
       "provider": "~deepseek",
-      "input_per_million": 0,
-      "output_per_million": 2.4,
+      "input_per_million": 0.03,
+      "output_per_million": 0.13,
       "context_window": 1048576,
-      "max_output": 943718,
+      "max_output": 393216,
       "is_free": false,
       "modalities": [
         "text",
@@ -7063,8 +6950,8 @@
       "id": "~deepseek/deepseek-pro-latest",
       "name": "DeepSeek: DeepSeek Pro Latest",
       "provider": "~deepseek",
-      "input_per_million": 0.19,
-      "output_per_million": 4.2,
+      "input_per_million": 0.25,
+      "output_per_million": 0.75,
       "context_window": 1048576,
       "max_output": 393216,
       "is_free": false,
@@ -7077,8 +6964,8 @@
       "id": "~deepseek/deepseek-v4-flash-latest",
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "provider": "~deepseek",
-      "input_per_million": 0.02,
-      "output_per_million": 1.28,
+      "input_per_million": 0.01,
+      "output_per_million": 0.77,
       "context_window": 1048576,
       "max_output": 943718,
       "is_free": false,
@@ -7131,8 +7018,8 @@
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI: Kimi Latest",
       "provider": "~moonshotai",
-      "input_per_million": 0.66,
-      "output_per_million": 13,
+      "input_per_million": 0.73,
+      "output_per_million": 10,
       "context_window": 1048576,
       "max_output": 943718,
       "is_free": false,
@@ -7249,10 +7136,10 @@
       "id": "~z-ai/glm-flash-latest",
       "name": "Z.ai: GLM Flash Latest",
       "provider": "~z ai",
-      "input_per_million": 0.04,
-      "output_per_million": 0.5,
+      "input_per_million": 0.02,
+      "output_per_million": 1.2,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 943718,
       "is_free": false,
       "modalities": [
         "text",
@@ -7265,10 +7152,10 @@
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
       "provider": "~z ai",
-      "input_per_million": 0.03,
-      "output_per_million": 12,
+      "input_per_million": 0.06,
+      "output_per_million": 5,
       "context_window": 1048576,
-      "max_output": 131072,
+      "max_output": 943718,
       "is_free": false,
       "modalities": [
         "text->text"
