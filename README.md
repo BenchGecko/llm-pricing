@@ -157,6 +157,7 @@ Each model in `pricing.json` has this structure:
 
 - [BenchGecko](https://benchgecko.ai) — Full model rankings, benchmark scores, and provider analytics
 - [BenchGecko Compare](https://benchgecko.ai/compare) — Side-by-side model comparison with pricing + performance
+- [AIHOT API Pricing](https://aihot.news/leaderboard/prices) — Compare published token prices for model input, output, and cache hits, normalized to RMB per million tokens
 - [BenchGecko API](https://benchgecko.ai/api-docs) — Free REST API for model data, benchmarks, and pricing
 - [Awesome LLM Benchmarks](https://github.com/BenchGecko/awesome-llm-benchmarks) — Curated list of 60+ AI benchmarks
 
